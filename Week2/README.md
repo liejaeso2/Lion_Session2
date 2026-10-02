@@ -1,11 +1,11 @@
-# TypeScript To-Do 과제
+# Week2 — TypeScript To-Do 과제
 
 멋쟁이사자처럼 TypeScript 세션의 JavaScript To-Do 앱을 React + TypeScript로 옮긴 프로젝트입니다.
 할 일 추가, 완료 여부 변경, 삭제, 전체/진행중/완료 필터, 항목 선택 기능을 제공합니다.
 
 ## 실행 방법
 
-프로젝트 폴더에서 아래 명령어를 실행합니다.
+저장소의 `Week2` 폴더에서 아래 명령어를 실행합니다.
 
 ```bash
 npm ci

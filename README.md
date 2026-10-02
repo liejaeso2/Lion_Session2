@@ -1,56 +1,72 @@
-# 세션 과제 모음
+# 멋쟁이사자처럼 세션 과제
 
-## TypeScript To-Do 과제
+주차별 과제를 독립된 프로젝트로 정리했습니다.
 
-JavaScript To-Do 앱을 React + TypeScript로 옮긴 과제입니다.
-코드와 실행 방법은 [ts-practice 폴더의 README](ts-practice/README.md)에 있습니다.
+| 주차 | 과제 | 코드 및 설명 |
+| --- | --- | --- |
+| Week1 | React 회원가입 페이지 및 재사용 가능한 Input/Button 컴포넌트 | [Week1](Week1/README.md) |
+| Week2 | JavaScript To-Do 앱을 React + TypeScript로 변환 | [Week2](Week2/README.md) |
+
+## 저장소 구조
+
+```text
+Lion_Session2/
+├── README.md
+├── .gitignore
+├── Week1/
+│   ├── README.md
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── src/
+│   ├── public/
+│   ├── screenshots/
+│   └── 기타 프로젝트 설정 파일
+└── Week2/
+    ├── README.md
+    ├── package.json
+    ├── package-lock.json
+    ├── src/
+    ├── public/
+    ├── docs/
+    └── 기타 프로젝트 설정 파일
+```
+
+각 폴더에 독립된 의존성과 설정 파일이 있습니다. 실행하려는 주차 폴더에서 설치 및 실행합니다.
+
+## Week1 실행
 
 ```bash
-cd ts-practice
+cd Week1
 npm ci
 npm run dev
 ```
 
-### 타입 검사 및 빌드 성공
+[회원가입 과제 설명과 스크린샷](Week1/README.md)
 
-`npm run build`가 끝까지 성공한 터미널 화면입니다.
+## Week2 실행
 
-![타입 검사 및 빌드 성공](ts-practice/docs/build-success.png)
-
-### 필터 및 선택 동작
-
-할 일 3개를 추가하고 하나를 완료 처리한 뒤 '진행중' 필터를 적용했습니다.
-항목을 클릭하여 '선택한 할 일: 축구'가 표시된 화면입니다.
-
-![진행중 필터 및 항목 선택](ts-practice/docs/todo-selected.jpg)
-
-추가·필터·완료 처리 스크린샷과 타입 적용 설명은 [과제 README](ts-practice/README.md)를 참고하세요.
-
----
-# 회원가입 페이지 과제
-
-React, Vite, Tailwind CSS로 구현한 회원가입 페이지입니다.
-
-## 실행
+저장소 최상위에서 아래 명령어를 실행합니다.
 
 ```bash
-npm install
+cd Week2
+npm ci
 npm run dev
 ```
 
-## 구현 내용
+타입 검사, 린터 및 빌드는 `Week2` 폴더에서 실행합니다.
 
-- 이름, 이메일, 비밀번호, 비밀번호 확인 입력
-- 재사용 가능한 `Input` 컴포넌트: default, focus, filled, disabled 상태
-- 세션에서 만든 `Button` 컴포넌트 재사용
-- 비밀번호 일치 여부 확인 (회원가입 서버 API는 연결하지 않음)
+```bash
+npx tsc -b
+npm run lint
+npm run build
+```
 
-## Figma 디자인
+[TypeScript 과제 설명과 전체 제출 스크린샷](Week2/README.md)
 
-[소재일 페이지의 Input 컴포넌트](https://www.figma.com/design/dAX1eOnAZK1AUk4k9RVZhY/2026-2-Session?node-id=264-26)
+### Week2 타입 검사 및 빌드 성공
 
-![Figma Input 컴포넌트 4가지 상태](screenshots/figma-input.png)
+![Week2 타입 검사 및 빌드 성공](Week2/docs/build-success.png)
 
-## 회원가입 화면
+### Week2 필터 및 선택 동작
 
-![React 회원가입 페이지](screenshots/signup.png)
+![Week2 진행중 필터 및 항목 선택](Week2/docs/todo-selected.jpg)
