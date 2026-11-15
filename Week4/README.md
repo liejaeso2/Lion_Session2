@@ -7,9 +7,10 @@
 
 ## 실행
 
-터미널 두 개가 필요합니다.
+터미널 두 개가 필요합니다. 두 터미널 모두 `Week4` 폴더에서 실행합니다.
 
 ```bash
+cd Week4
 npm ci
 npx json-server server/db.json   # 터미널 1: 가짜 API 서버 (localhost:3000)
 npm run dev                      # 터미널 2: React 화면
